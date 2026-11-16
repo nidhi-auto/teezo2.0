@@ -13,11 +13,11 @@
 | REQ-009 | chat | implemented | backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions |
 | REQ-010 | chat | implemented | backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions |
 | REQ-011 | chat | implemented | backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events |
-| REQ-012 | chat | implemented | package.json: dev script |
-| REQ-013 | chat | implemented | package.json: concurrently + vite; README.md |
+| REQ-012 | chat | implemented | package.json:7-8 ("dev": "vite"); .launchpad/preview.json:1 |
+| REQ-013 | chat | implemented | README.md:3-15; package.json:1; .launchpad/preview.json:4-15; backend/backend/ Express API |
 | REQ-014 | chat | implemented | src/views/*; src/components/AppShell.tsx |
 | REQ-015 | chat | implemented | src/views/*; src/components/AppShell.tsx |
-| REQ-016 | chat | implemented | package.json: npm run dev |
+| REQ-016 | chat | implemented | package.json:7 (npm run dev); vite.config.ts:7-13; runtime-verification.json: GET /api/v1/health → 200 |
 | REQ-017 | chat | implemented | src/views/*; src/components/AppShell.tsx |
 | REQ-018 | chat | implemented | runtime-verification.json: POST /api/auth/register; src/views/SignInView.tsx |
 | REQ-019 | chat | implemented | runtime-verification.json: POST /api/auth/google |
@@ -50,9 +50,9 @@
 | REQ-046 | release_scope | implemented | backend/backend/src/routes/admin.ts & player.ts; src/views/* |
 | REQ-047 | release_scope | implemented | docs/MOBILE_PLATFORM_BASELINE.md |
 | REQ-048 | release_scope | implemented | runtime-verification.json: POST /api/auth/google |
-| REQ-049 | release_scope | implemented | mobile/src/api/; tests in mobile/test/ |
-| REQ-050 | release_scope | implemented | mobile/src/api/; tests in mobile/test/ |
-| REQ-051 | release_scope | implemented | mobile/src/api/; tests in mobile/test/ |
+| REQ-049 | release_scope | implemented | mobile/src/api/membership-flows.ts:35; backend/backend/tests/mobile-player-workflows.test.ts:15; runtime-verification.json: GET /api/invitations → 200 |
+| REQ-050 | release_scope | implemented | mobile/src/api/live-clubs-flows.ts:33; backend/backend/tests/mobile-player-workflows.test.ts:31; runtime-verification.json: GET /api/clubs/live-tournaments → 200 |
+| REQ-051 | release_scope | implemented | mobile/src/api/activity-flows.ts:41; backend/backend/tests/mobile-player-workflows.test.ts:49; runtime-verification.json: GET /api/me/clubs → 200 |
 | REQ-052 | release_scope | implemented | backend/backend/src/routes/admin.ts & player.ts; src/views/* |
 | REQ-053 | release_scope | implemented | backend/backend/src/routes/admin.ts & player.ts; src/views/* |
 | REQ-054 | release_scope | implemented | backend/backend/src/routes/admin.ts & player.ts; src/views/* |
@@ -64,8 +64,8 @@
 | REQ-060 | release_scope | implemented | backend/backend/src/routes/admin.ts & player.ts; src/views/* |
 | REQ-061 | release_scope | implemented | docs/MOBILE_PLATFORM_BASELINE.md |
 | REQ-062 | release_scope | implemented | runtime-verification.json: POST /api/auth/google |
-| REQ-063 | release_scope | implemented | mobile/src/api/; tests in mobile/test/ |
-| REQ-064 | release_scope | implemented | mobile/src/api/; tests in mobile/test/ |
+| REQ-063 | release_scope | implemented | mobile/src/api/membership-flows.ts:35; backend/backend/tests/mobile-player-workflows.test.ts:15; runtime-verification.json: GET /api/join-requests → 200 |
+| REQ-064 | release_scope | implemented | mobile/src/api/live-clubs-flows.ts:33; mobile/src/api/activity-flows.ts:41; runtime-verification.json: GET /api/clubs/live-tournaments → 200 |
 | REQ-065 | release_scope | implemented | backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events |
 | REQ-066 | release_scope | implemented | backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events |
 | REQ-067 | release_scope | implemented | backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events |
@@ -84,9 +84,9 @@
 | REQ-080 | release_scope | implemented | backend/backend/src/routes/admin.ts & player.ts; src/views/* |
 | REQ-081 | release_scope | implemented | docs/MOBILE_PLATFORM_BASELINE.md |
 | REQ-082 | release_scope | implemented | runtime-verification.json: POST /api/auth/google |
-| REQ-083 | release_scope | implemented | mobile/src/api/; tests in mobile/test/ |
-| REQ-084 | release_scope | implemented | mobile/src/api/; tests in mobile/test/ |
-| REQ-085 | release_scope | implemented | mobile/src/api/; tests in mobile/test/ |
+| REQ-083 | release_scope | implemented | mobile/src/api/membership-flows.ts:35; backend/backend/tests/mobile-player-workflows.test.ts:15; runtime-verification.json: POST /api/invitations/*/accept → 200 |
+| REQ-084 | release_scope | implemented | mobile/src/api/live-clubs-flows.ts:50; backend/backend/tests/mobile-player-workflows.test.ts:31; runtime-verification.json: GET /api/clubs/live-tournaments → 200 |
+| REQ-085 | release_scope | implemented | mobile/src/api/activity-flows.ts:41; backend/backend/tests/mobile-player-workflows.test.ts:49; runtime-verification.json: GET /api/me/clubs/*/tournaments → 200 |
 | REQ-086 | release_scope | implemented | backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions |
 | REQ-087 | release_scope | implemented | backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions |
 | REQ-088 | release_scope | implemented | backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions |

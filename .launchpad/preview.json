@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "source": "agent",
+  "root": ".",
+  "framework": "vite",
+  "packageManager": "npm",
+  "install": "npm install",
+  "dev": {
+    "script": "dev",
+    "portArg": "--port {port}",
+    "hostArg": "--host {host}"
+  },
+  "health": {
+    "path": "/",
+    "readyMarker": "id=\"root\""
+  },
+  "env": {
+    "VITE_API_BASE_URL": ""
+  }
+}

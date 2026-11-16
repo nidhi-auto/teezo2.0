@@ -1,3 +1,3 @@
 # Runtime verification
 
-In-process supertest smoke; frontend build via Vite CLI.
+Includes mobile player workflow endpoints (invitations, join-requests, live-tournaments, joined clubs).

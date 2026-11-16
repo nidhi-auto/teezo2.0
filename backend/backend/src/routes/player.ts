@@ -9,6 +9,14 @@ import { getStore } from "../store/memory-store.js";
 import { HttpError, sendError } from "../utils/errors.js";
 import { newId } from "../utils/ids.js";
 import type { JoinRequest, Tournament } from "../types.js";
+import {
+  serializeInvitation,
+  serializeJoinRequest,
+  serializeJoinedClub,
+  serializeLiveTournamentClub,
+  serializeMembership,
+  serializeTournament,
+} from "../serializers/player-mobile.js";
 
 export const playerRouter = Router();
 playerRouter.use(authenticate);
@@ -23,10 +31,10 @@ playerRouter.get(
       const clubIds = store.memberships
         .filter((m) => m.accountId === account.id)
         .map((m) => m.clubId);
-      const items = clubIds
-        .map((id) => store.clubs.get(id))
+      const clubs = clubIds
+        .map((id) => serializeJoinedClub(id, account.id))
         .filter(Boolean);
-      res.json({ items });
+      res.json({ items: clubs, clubs });
     } catch (err) {
       sendError(res, err);
     }
@@ -40,10 +48,17 @@ playerRouter.get(
     try {
       const { clubId } = req.params;
       assertMemberOfClub(req.account!, clubId);
-      const items = [...getStore().tournaments.values()].filter(
-        (t) => t.clubId === clubId,
-      );
-      res.json({ items });
+      const club = getStore().clubs.get(clubId);
+      const tournaments = [...getStore().tournaments.values()]
+        .filter((t) => t.clubId === clubId)
+        .map(serializeTournament);
+      res.json({
+        items: tournaments,
+        club: club
+          ? { id: club.id, name: club.name, clubId: club.id, clubName: club.name }
+          : null,
+        tournaments,
+      });
     } catch (err) {
       sendError(res, err);
     }
@@ -55,10 +70,10 @@ playerRouter.get(
   requirePermission("player:self_service"),
   (req: AuthedRequest, res) => {
     const account = req.account!;
-    const items = [...getStore().joinRequests.values()].filter(
-      (j) => j.accountId === account.id,
-    );
-    res.json({ items });
+    const joinRequests = [...getStore().joinRequests.values()]
+      .filter((j) => j.accountId === account.id)
+      .map(serializeJoinRequest);
+    res.json({ items: joinRequests, joinRequests });
   },
 );
 
@@ -96,7 +111,18 @@ playerRouter.post(
       }
       const pending = prior.find((j) => j.status === "pending");
       if (pending) {
-        res.json({ joinRequest: pending });
+        res.json({
+          created: false,
+          joinRequest: serializeJoinRequest(pending),
+          club: store.clubs.get(clubId)
+            ? {
+                id: clubId,
+                name: store.clubs.get(clubId)!.name,
+                clubId,
+                clubName: store.clubs.get(clubId)!.name,
+              }
+            : null,
+        });
         return;
       }
       const joinRequest: JoinRequest = {
@@ -109,7 +135,14 @@ playerRouter.post(
         createdAt: new Date().toISOString(),
       };
       store.joinRequests.set(joinRequest.id, joinRequest);
-      res.status(201).json({ joinRequest });
+      const club = store.clubs.get(clubId);
+      res.status(201).json({
+        created: true,
+        joinRequest: serializeJoinRequest(joinRequest),
+        club: club
+          ? { id: club.id, name: club.name, clubId: club.id, clubName: club.name }
+          : null,
+      });
     } catch (err) {
       sendError(res, err);
     }
@@ -122,10 +155,10 @@ playerRouter.get(
   (req: AuthedRequest, res) => {
     const account = req.account!;
     const email = account.email.toLowerCase();
-    const items = [...getStore().invitations.values()].filter(
-      (i) => i.inviteeEmail === email,
-    );
-    res.json({ items });
+    const invitations = [...getStore().invitations.values()]
+      .filter((i) => i.inviteeEmail === email)
+      .map(serializeInvitation);
+    res.json({ items: invitations, invitations });
   },
 );
 
@@ -151,14 +184,21 @@ playerRouter.post(
       const exists = store.memberships.some(
         (m) => m.accountId === account.id && m.clubId === invitation.clubId,
       );
+      let membership = store.memberships.find(
+        (m) => m.accountId === account.id && m.clubId === invitation.clubId,
+      );
       if (!exists) {
-        store.memberships.push({
+        membership = {
           accountId: account.id,
           clubId: invitation.clubId,
           joinedAt: new Date().toISOString(),
-        });
+        };
+        store.memberships.push(membership);
       }
-      res.json({ invitation });
+      res.json({
+        invitation: serializeInvitation(invitation),
+        membership: membership ? serializeMembership(membership) : null,
+      });
     } catch (err) {
       sendError(res, err);
     }
@@ -179,7 +219,7 @@ playerRouter.post(
         throw new HttpError(400, "Invitation not pending");
       }
       invitation.status = "declined";
-      res.json({ invitation });
+      res.json({ invitation: serializeInvitation(invitation) });
     } catch (err) {
       sendError(res, err);
     }
@@ -198,10 +238,13 @@ playerRouter.get(
       list.push(t);
       liveByClub.set(t.clubId, list);
     }
-    const items = [...liveByClub.entries()].map(([clubId, tournaments]) => ({
-      club: store.clubs.get(clubId),
-      tournaments,
-    }));
-    res.json({ items });
+    const items = [...liveByClub.entries()]
+      .map(([clubId, tournaments]) => {
+        const club = store.clubs.get(clubId);
+        if (!club) return null;
+        return serializeLiveTournamentClub(club, tournaments);
+      })
+      .filter(Boolean);
+    res.json({ items, clubs: items });
   },
 );

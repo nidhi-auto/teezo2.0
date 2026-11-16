@@ -14,8 +14,10 @@ Club administration, player membership, and tournament workflows for Teezo Golf.
 npm install
 cd backend/backend && npm install && cd ../..
 cd mobile && npm install && cd ..
-npm run dev
+npm run dev:stack
 ```
+
+Preview Desktop uses root `package.json` (`npm run dev` → Vite only) and `.launchpad/preview.json`. Run the API separately with `npm run dev --prefix backend/backend`, or use `npm run dev:stack` for both.
 
 - Vite: http://localhost:5173 (proxies `/api` to the API)
 - API health: http://localhost:3001/api/v1/health

@@ -84,6 +84,18 @@ export async function seedDemoStore(store: MemoryStore): Promise<void> {
     joinedAt: now,
   });
 
+  const pendingInvite = newId();
+  const inviteExpires = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString();
+  store.invitations.set(pendingInvite, {
+    id: pendingInvite,
+    clubId: clubB,
+    inviteeEmail: "player@teezo.local",
+    status: "pending",
+    expiresAt: inviteExpires,
+    createdByAccountId: clubAdminId,
+    createdAt: now,
+  });
+
   const draftTournament = newId();
   store.tournaments.set(draftTournament, {
     id: draftTournament,

@@ -20,13 +20,13 @@
       "status": 401
     },
     {
-      "method": "POST",
-      "path": "/api/auth/google",
-      "status": 400
+      "method": "GET",
+      "path": "/api/invitations",
+      "status": 200
     },
     {
       "method": "GET",
-      "path": "/api/me/clubs",
+      "path": "/api/join-requests",
       "status": 200
     },
     {
@@ -36,13 +36,23 @@
     },
     {
       "method": "GET",
-      "path": "/api/admin/platform/clubs",
+      "path": "/api/me/clubs",
       "status": 200
     },
     {
       "method": "GET",
-      "path": "/api/admin/clubs/a813a459-a02a-43b5-8709-bb3e0d0a74bd/players",
+      "path": "/api/me/clubs/39e9543e-8414-432f-afcd-d7513783b9bd/tournaments",
       "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/invitations/447eed68-29ca-4027-9116-37933f717898/accept",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/join-requests",
+      "status": 409
     }
   ],
   "unmatchedFrontendCalls": [],

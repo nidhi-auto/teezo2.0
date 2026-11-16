@@ -59,12 +59,12 @@
     {
       "id": "REQ-012",
       "status": "implemented",
-      "evidence": "package.json: dev script"
+      "evidence": "package.json:7-8 (\"dev\": \"vite\"); .launchpad/preview.json:1"
     },
     {
       "id": "REQ-013",
       "status": "implemented",
-      "evidence": "package.json: concurrently + vite; README.md"
+      "evidence": "README.md:3-15; package.json:1; .launchpad/preview.json:4-15; backend/backend/ Express API"
     },
     {
       "id": "REQ-014",
@@ -79,7 +79,7 @@
     {
       "id": "REQ-016",
       "status": "implemented",
-      "evidence": "package.json: npm run dev"
+      "evidence": "package.json:7 (npm run dev); vite.config.ts:7-13; runtime-verification.json: GET /api/v1/health → 200"
     },
     {
       "id": "REQ-017",
@@ -244,17 +244,17 @@
     {
       "id": "REQ-049",
       "status": "implemented",
-      "evidence": "mobile/src/api/; tests in mobile/test/"
+      "evidence": "mobile/src/api/membership-flows.ts:35; backend/backend/tests/mobile-player-workflows.test.ts:15; runtime-verification.json: GET /api/invitations → 200"
     },
     {
       "id": "REQ-050",
       "status": "implemented",
-      "evidence": "mobile/src/api/; tests in mobile/test/"
+      "evidence": "mobile/src/api/live-clubs-flows.ts:33; backend/backend/tests/mobile-player-workflows.test.ts:31; runtime-verification.json: GET /api/clubs/live-tournaments → 200"
     },
     {
       "id": "REQ-051",
       "status": "implemented",
-      "evidence": "mobile/src/api/; tests in mobile/test/"
+      "evidence": "mobile/src/api/activity-flows.ts:41; backend/backend/tests/mobile-player-workflows.test.ts:49; runtime-verification.json: GET /api/me/clubs → 200"
     },
     {
       "id": "REQ-052",
@@ -314,12 +314,12 @@
     {
       "id": "REQ-063",
       "status": "implemented",
-      "evidence": "mobile/src/api/; tests in mobile/test/"
+      "evidence": "mobile/src/api/membership-flows.ts:35; backend/backend/tests/mobile-player-workflows.test.ts:15; runtime-verification.json: GET /api/join-requests → 200"
     },
     {
       "id": "REQ-064",
       "status": "implemented",
-      "evidence": "mobile/src/api/; tests in mobile/test/"
+      "evidence": "mobile/src/api/live-clubs-flows.ts:33; mobile/src/api/activity-flows.ts:41; runtime-verification.json: GET /api/clubs/live-tournaments → 200"
     },
     {
       "id": "REQ-065",
@@ -414,17 +414,17 @@
     {
       "id": "REQ-083",
       "status": "implemented",
-      "evidence": "mobile/src/api/; tests in mobile/test/"
+      "evidence": "mobile/src/api/membership-flows.ts:35; backend/backend/tests/mobile-player-workflows.test.ts:15; runtime-verification.json: POST /api/invitations/*/accept → 200"
     },
     {
       "id": "REQ-084",
       "status": "implemented",
-      "evidence": "mobile/src/api/; tests in mobile/test/"
+      "evidence": "mobile/src/api/live-clubs-flows.ts:50; backend/backend/tests/mobile-player-workflows.test.ts:31; runtime-verification.json: GET /api/clubs/live-tournaments → 200"
     },
     {
       "id": "REQ-085",
       "status": "implemented",
-      "evidence": "mobile/src/api/; tests in mobile/test/"
+      "evidence": "mobile/src/api/activity-flows.ts:41; backend/backend/tests/mobile-player-workflows.test.ts:49; runtime-verification.json: GET /api/me/clubs/*/tournaments → 200"
     },
     {
       "id": "REQ-086",
