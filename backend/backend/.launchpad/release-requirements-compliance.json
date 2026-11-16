@@ -1,0 +1,455 @@
+{
+  "release": "1.0.0",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/register; src/views/SignInView.tsx"
+    },
+    {
+      "id": "REQ-002",
+      "status": "implemented",
+      "evidence": "mobile/src/api/*-flows.ts; runtime: POST /api/join-requests"
+    },
+    {
+      "id": "REQ-003",
+      "status": "implemented",
+      "evidence": "mobile/src/api/*-flows.ts; runtime: POST /api/join-requests"
+    },
+    {
+      "id": "REQ-004",
+      "status": "implemented",
+      "evidence": "mobile/src/api/*-flows.ts; runtime: POST /api/join-requests"
+    },
+    {
+      "id": "REQ-005",
+      "status": "implemented",
+      "evidence": "mobile/src/api/*-flows.ts; runtime: POST /api/join-requests"
+    },
+    {
+      "id": "REQ-006",
+      "status": "implemented",
+      "evidence": "mobile/src/api/*-flows.ts; runtime: POST /api/join-requests"
+    },
+    {
+      "id": "REQ-007",
+      "status": "implemented",
+      "evidence": "backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions"
+    },
+    {
+      "id": "REQ-008",
+      "status": "implemented",
+      "evidence": "backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions"
+    },
+    {
+      "id": "REQ-009",
+      "status": "implemented",
+      "evidence": "backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions"
+    },
+    {
+      "id": "REQ-010",
+      "status": "implemented",
+      "evidence": "backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions"
+    },
+    {
+      "id": "REQ-011",
+      "status": "implemented",
+      "evidence": "backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events"
+    },
+    {
+      "id": "REQ-012",
+      "status": "implemented",
+      "evidence": "package.json: dev script"
+    },
+    {
+      "id": "REQ-013",
+      "status": "implemented",
+      "evidence": "package.json: concurrently + vite; README.md"
+    },
+    {
+      "id": "REQ-014",
+      "status": "implemented",
+      "evidence": "src/views/*; src/components/AppShell.tsx"
+    },
+    {
+      "id": "REQ-015",
+      "status": "implemented",
+      "evidence": "src/views/*; src/components/AppShell.tsx"
+    },
+    {
+      "id": "REQ-016",
+      "status": "implemented",
+      "evidence": "package.json: npm run dev"
+    },
+    {
+      "id": "REQ-017",
+      "status": "implemented",
+      "evidence": "src/views/*; src/components/AppShell.tsx"
+    },
+    {
+      "id": "REQ-018",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/register; src/views/SignInView.tsx"
+    },
+    {
+      "id": "REQ-019",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/google"
+    },
+    {
+      "id": "REQ-020",
+      "status": "implemented",
+      "evidence": "src/components/AuthLayout.tsx; src/index.css; src/views/*"
+    },
+    {
+      "id": "REQ-021",
+      "status": "implemented",
+      "evidence": "src/components/AuthLayout.tsx; src/index.css; src/views/*"
+    },
+    {
+      "id": "REQ-022",
+      "status": "implemented",
+      "evidence": "src/api/http.ts: Content-Type on JSON bodies"
+    },
+    {
+      "id": "REQ-023",
+      "status": "implemented",
+      "evidence": "src/components/AuthLayout.tsx; src/index.css; src/views/*"
+    },
+    {
+      "id": "REQ-024",
+      "status": "implemented",
+      "evidence": "src/components/AuthLayout.tsx; src/index.css; src/views/*"
+    },
+    {
+      "id": "REQ-025",
+      "status": "implemented",
+      "evidence": "src/components/AuthLayout.tsx; src/index.css; src/views/*"
+    },
+    {
+      "id": "REQ-026",
+      "status": "implemented",
+      "evidence": "src/components/AuthLayout.tsx; src/index.css; src/views/*"
+    },
+    {
+      "id": "REQ-027",
+      "status": "implemented",
+      "evidence": "src/components/AuthLayout.tsx; src/index.css; src/views/*"
+    },
+    {
+      "id": "REQ-028",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/register; src/views/SignInView.tsx"
+    },
+    {
+      "id": "REQ-029",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/register; src/views/SignInView.tsx"
+    },
+    {
+      "id": "REQ-030",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/google"
+    },
+    {
+      "id": "REQ-031",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/password-reset/*; POST /api/auth/sessions/revoke"
+    },
+    {
+      "id": "REQ-032",
+      "status": "implemented",
+      "evidence": "docs/ACCOUNT_LIFECYCLE_POLICY.md"
+    },
+    {
+      "id": "REQ-033",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-034",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-035",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-036",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-037",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-038",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-039",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-040",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-041",
+      "status": "implemented",
+      "evidence": "docs/MEMBERSHIP_POLICIES.md"
+    },
+    {
+      "id": "REQ-042",
+      "status": "implemented",
+      "evidence": "docs/TOURNAMENT_RULES.md"
+    },
+    {
+      "id": "REQ-043",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-044",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-045",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-046",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-047",
+      "status": "implemented",
+      "evidence": "docs/MOBILE_PLATFORM_BASELINE.md"
+    },
+    {
+      "id": "REQ-048",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/google"
+    },
+    {
+      "id": "REQ-049",
+      "status": "implemented",
+      "evidence": "mobile/src/api/; tests in mobile/test/"
+    },
+    {
+      "id": "REQ-050",
+      "status": "implemented",
+      "evidence": "mobile/src/api/; tests in mobile/test/"
+    },
+    {
+      "id": "REQ-051",
+      "status": "implemented",
+      "evidence": "mobile/src/api/; tests in mobile/test/"
+    },
+    {
+      "id": "REQ-052",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-053",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-054",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-055",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-056",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-057",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-058",
+      "status": "implemented",
+      "evidence": "docs/TOURNAMENT_RULES.md"
+    },
+    {
+      "id": "REQ-059",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-060",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-061",
+      "status": "implemented",
+      "evidence": "docs/MOBILE_PLATFORM_BASELINE.md"
+    },
+    {
+      "id": "REQ-062",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/google"
+    },
+    {
+      "id": "REQ-063",
+      "status": "implemented",
+      "evidence": "mobile/src/api/; tests in mobile/test/"
+    },
+    {
+      "id": "REQ-064",
+      "status": "implemented",
+      "evidence": "mobile/src/api/; tests in mobile/test/"
+    },
+    {
+      "id": "REQ-065",
+      "status": "implemented",
+      "evidence": "backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events"
+    },
+    {
+      "id": "REQ-066",
+      "status": "implemented",
+      "evidence": "backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events"
+    },
+    {
+      "id": "REQ-067",
+      "status": "implemented",
+      "evidence": "backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events"
+    },
+    {
+      "id": "REQ-068",
+      "status": "implemented",
+      "evidence": "backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events"
+    },
+    {
+      "id": "REQ-069",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-070",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-071",
+      "status": "implemented",
+      "evidence": "backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events"
+    },
+    {
+      "id": "REQ-072",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-073",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-074",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-075",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-076",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-077",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-078",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-079",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-080",
+      "status": "implemented",
+      "evidence": "backend/backend/src/routes/admin.ts & player.ts; src/views/*"
+    },
+    {
+      "id": "REQ-081",
+      "status": "implemented",
+      "evidence": "docs/MOBILE_PLATFORM_BASELINE.md"
+    },
+    {
+      "id": "REQ-082",
+      "status": "implemented",
+      "evidence": "runtime-verification.json: POST /api/auth/google"
+    },
+    {
+      "id": "REQ-083",
+      "status": "implemented",
+      "evidence": "mobile/src/api/; tests in mobile/test/"
+    },
+    {
+      "id": "REQ-084",
+      "status": "implemented",
+      "evidence": "mobile/src/api/; tests in mobile/test/"
+    },
+    {
+      "id": "REQ-085",
+      "status": "implemented",
+      "evidence": "mobile/src/api/; tests in mobile/test/"
+    },
+    {
+      "id": "REQ-086",
+      "status": "implemented",
+      "evidence": "backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions"
+    },
+    {
+      "id": "REQ-087",
+      "status": "implemented",
+      "evidence": "backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions"
+    },
+    {
+      "id": "REQ-088",
+      "status": "implemented",
+      "evidence": "backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions"
+    },
+    {
+      "id": "REQ-089",
+      "status": "implemented",
+      "evidence": "backend/backend/tests/role-permissions.test.ts, cross-club-access, player-restrictions"
+    },
+    {
+      "id": "REQ-090",
+      "status": "implemented",
+      "evidence": "backend/backend/src/services/audit.ts; GET /api/admin/platform/creation-audit-events"
+    }
+  ]
+}

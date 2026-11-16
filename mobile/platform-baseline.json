@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "release": "1.0.0",
+  "project": "Teezo 2.0",
+  "workItemIds": ["WORK-0A6862670370", "WORK-5C48B7757FF1", "WORK-4A09C5EB6746"],
+  "backlog": [192, 207, 228],
+  "personas": ["player"],
+  "platforms": {
+    "ios": {
+      "supported": true,
+      "minimumVersion": "15.1",
+      "deploymentTarget": "15.1"
+    },
+    "android": {
+      "supported": true,
+      "minimumVersion": "10",
+      "minSdkVersion": 29,
+      "apiLevel": 29
+    }
+  },
+  "outOfScope": ["club_admin", "super_admin"],
+  "buildAndTest": {
+    "iosSimulatorMinimum": "15.1",
+    "androidEmulatorApiMinimum": 29,
+    "manualFloorDevicesRequired": true
+  }
+}

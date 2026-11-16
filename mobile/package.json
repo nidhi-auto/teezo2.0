@@ -1,0 +1,12 @@
+{
+  "name": "@teezo/player-mobile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:access",
+    "test:live-clubs-policies": "node --experimental-strip-types --test test/live-clubs-policies.test.ts",
+    "test:activity-policies": "node --experimental-strip-types --test test/activity-policies.test.ts",
+    "test:access": "node --experimental-strip-types --test test/live-clubs-policies.test.ts test/activity-policies.test.ts test/player-administrative-restrictions.test.ts test/role-scoped-scale-policies.test.ts",
+    "test:player-restrictions": "node --experimental-strip-types --test test/player-administrative-restrictions.test.ts"
+  }
+}

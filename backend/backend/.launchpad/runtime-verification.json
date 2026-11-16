@@ -1,0 +1,59 @@
+{
+  "mode": "express",
+  "bootOk": true,
+  "handlersLoadedOk": null,
+  "healthOk": true,
+  "lintOk": true,
+  "uiStack": "web",
+  "frontendVerifyCommand": "node node_modules/vite/dist/node/cli.js build",
+  "frontendBuildOk": true,
+  "backendBuildOk": null,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v1/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/me/clubs",
+      "status": 401
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/google",
+      "status": 400
+    },
+    {
+      "method": "GET",
+      "path": "/api/me/clubs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/clubs/live-tournaments",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/platform/clubs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/clubs/a813a459-a02a-43b5-8709-bb3e0d0a74bd/players",
+      "status": 200
+    }
+  ],
+  "unmatchedFrontendCalls": [],
+  "authChecks": {
+    "protectedRoutes401": true,
+    "jwtWiredOnProtectedRoutes": true,
+    "googleExchange4xx": true,
+    "credentialsMissing": true
+  },
+  "mockScan": {
+    "leftoverCount": 0,
+    "items": []
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+.spa-build/
+*.log
+.DS_Store
+backend/backend/dist/

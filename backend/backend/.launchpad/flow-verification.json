@@ -1,0 +1,538 @@
+{
+  "version": 1,
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "label": "Support email and password accounts (initial)"
+    },
+    {
+      "id": "REQ-002",
+      "label": "Mobile invitations and join requests (1)"
+    },
+    {
+      "id": "REQ-003",
+      "label": "Mobile invitations and join requests (2)"
+    },
+    {
+      "id": "REQ-004",
+      "label": "Mobile invitations and join requests (3)"
+    },
+    {
+      "id": "REQ-005",
+      "label": "Browse live clubs on mobile"
+    },
+    {
+      "id": "REQ-006",
+      "label": "View joined clubs and tournaments mobile"
+    },
+    {
+      "id": "REQ-007",
+      "label": "Enforce server-side role permissions"
+    },
+    {
+      "id": "REQ-008",
+      "label": "Protect cross-club data boundaries"
+    },
+    {
+      "id": "REQ-009",
+      "label": "Test player administrative restrictions"
+    },
+    {
+      "id": "REQ-010",
+      "label": "Scale role-scoped platform data"
+    },
+    {
+      "id": "REQ-011",
+      "label": "Record required creation metadata"
+    },
+    {
+      "id": "REQ-012",
+      "label": "Root package.json for preview"
+    },
+    {
+      "id": "REQ-013",
+      "label": "LaunchPad preview bootstrap"
+    },
+    {
+      "id": "REQ-014",
+      "label": "Remove development workspace marketing UI"
+    },
+    {
+      "id": "REQ-015",
+      "label": "Role-based product UI"
+    },
+    {
+      "id": "REQ-016",
+      "label": "npm run dev stack"
+    },
+    {
+      "id": "REQ-017",
+      "label": "Proper Teezo UI"
+    },
+    {
+      "id": "REQ-018",
+      "label": "Email/password story"
+    },
+    {
+      "id": "REQ-019",
+      "label": "Google sign-in story"
+    },
+    {
+      "id": "REQ-020",
+      "label": "UI revamp"
+    },
+    {
+      "id": "REQ-021",
+      "label": "Requirements doc UI"
+    },
+    {
+      "id": "REQ-022",
+      "label": "Fix demo accountId"
+    },
+    {
+      "id": "REQ-023",
+      "label": "SaaS UI"
+    },
+    {
+      "id": "REQ-024",
+      "label": "Golf background image"
+    },
+    {
+      "id": "REQ-025",
+      "label": "Fixed background on scroll"
+    },
+    {
+      "id": "REQ-026",
+      "label": "Golf branding + web suggestions"
+    },
+    {
+      "id": "REQ-027",
+      "label": "Club Caddie-inspired UX"
+    },
+    {
+      "id": "REQ-028",
+      "label": "Authentication lifecycle epic"
+    },
+    {
+      "id": "REQ-029",
+      "label": "Support email and password accounts"
+    },
+    {
+      "id": "REQ-030",
+      "label": "Google account sign-in and linking"
+    },
+    {
+      "id": "REQ-031",
+      "label": "Password reset and session controls"
+    },
+    {
+      "id": "REQ-032",
+      "label": "Account deactivation and retention rules"
+    },
+    {
+      "id": "REQ-033",
+      "label": "Manage Club Admin accounts as Super Admin"
+    },
+    {
+      "id": "REQ-034",
+      "label": "Platform-wide Super Admin management"
+    },
+    {
+      "id": "REQ-035",
+      "label": "Restrict Club Admin to assigned club"
+    },
+    {
+      "id": "REQ-036",
+      "label": "Authorization coverage and audit records"
+    },
+    {
+      "id": "REQ-037",
+      "label": "Send and manage club invitations"
+    },
+    {
+      "id": "REQ-038",
+      "label": "Submit and track club join requests"
+    },
+    {
+      "id": "REQ-039",
+      "label": "Review and decide join requests"
+    },
+    {
+      "id": "REQ-040",
+      "label": "Multi-club membership and player removal"
+    },
+    {
+      "id": "REQ-041",
+      "label": "Invitation and re-application policies"
+    },
+    {
+      "id": "REQ-042",
+      "label": "Initial tournament rules and lifecycle"
+    },
+    {
+      "id": "REQ-043",
+      "label": "Create and manage club tournaments"
+    },
+    {
+      "id": "REQ-044",
+      "label": "Browse clubs with live tournaments"
+    },
+    {
+      "id": "REQ-045",
+      "label": "Join clubs with live tournaments"
+    },
+    {
+      "id": "REQ-046",
+      "label": "Show joined clubs and tournaments"
+    },
+    {
+      "id": "REQ-047",
+      "label": "iOS and Android support baseline"
+    },
+    {
+      "id": "REQ-048",
+      "label": "Player authentication on mobile"
+    },
+    {
+      "id": "REQ-049",
+      "label": "Mobile invitations and join requests"
+    },
+    {
+      "id": "REQ-050",
+      "label": "Browse and join live-tournament clubs on mobile"
+    },
+    {
+      "id": "REQ-051",
+      "label": "View joined clubs, tournaments, request status"
+    },
+    {
+      "id": "REQ-052",
+      "label": "Create and manage Club Admin accounts"
+    },
+    {
+      "id": "REQ-053",
+      "label": "Restrict Club Admin access to assigned club"
+    },
+    {
+      "id": "REQ-054",
+      "label": "Enforce Player capability restrictions"
+    },
+    {
+      "id": "REQ-055",
+      "label": "Invite players by email"
+    },
+    {
+      "id": "REQ-056",
+      "label": "Process club join requests"
+    },
+    {
+      "id": "REQ-057",
+      "label": "Manage club player membership"
+    },
+    {
+      "id": "REQ-058",
+      "label": "Define initial tournament rules"
+    },
+    {
+      "id": "REQ-059",
+      "label": "Create and manage club tournaments"
+    },
+    {
+      "id": "REQ-060",
+      "label": "Browse and join live tournaments"
+    },
+    {
+      "id": "REQ-061",
+      "label": "Mobile platform support boundaries"
+    },
+    {
+      "id": "REQ-062",
+      "label": "Support Player mobile sign-in"
+    },
+    {
+      "id": "REQ-063",
+      "label": "Handle invitations and join requests on mobile"
+    },
+    {
+      "id": "REQ-064",
+      "label": "Browse clubs and joined tournaments on mobile"
+    },
+    {
+      "id": "REQ-065",
+      "label": "Record Club Admin creation events"
+    },
+    {
+      "id": "REQ-066",
+      "label": "Record Player creation events"
+    },
+    {
+      "id": "REQ-067",
+      "label": "Record Tournament creation events"
+    },
+    {
+      "id": "REQ-068",
+      "label": "Review creation audit records"
+    },
+    {
+      "id": "REQ-069",
+      "label": "Manage Club Admin Accounts"
+    },
+    {
+      "id": "REQ-070",
+      "label": "View Platform-Wide Club Data"
+    },
+    {
+      "id": "REQ-071",
+      "label": "Audit Administrative Creation Actions"
+    },
+    {
+      "id": "REQ-072",
+      "label": "Manage Players Within Assigned Club"
+    },
+    {
+      "id": "REQ-073",
+      "label": "Send Expiring Club Invitations"
+    },
+    {
+      "id": "REQ-074",
+      "label": "Review Club Join Requests"
+    },
+    {
+      "id": "REQ-075",
+      "label": "Support Multiple Club Memberships"
+    },
+    {
+      "id": "REQ-076",
+      "label": "Remove Players From Clubs"
+    },
+    {
+      "id": "REQ-077",
+      "label": "Create And Configure Tournaments"
+    },
+    {
+      "id": "REQ-078",
+      "label": "Publish And Make Tournaments Live"
+    },
+    {
+      "id": "REQ-079",
+      "label": "Close Tournaments"
+    },
+    {
+      "id": "REQ-080",
+      "label": "Support Player Tournament Participation"
+    },
+    {
+      "id": "REQ-081",
+      "label": "Define Supported Mobile Platforms"
+    },
+    {
+      "id": "REQ-082",
+      "label": "Support Player Mobile Sign-In"
+    },
+    {
+      "id": "REQ-083",
+      "label": "Handle Mobile Invitations And Requests"
+    },
+    {
+      "id": "REQ-084",
+      "label": "Browse Live Clubs On Mobile"
+    },
+    {
+      "id": "REQ-085",
+      "label": "View Joined Clubs And Tournaments"
+    },
+    {
+      "id": "REQ-086",
+      "label": "Enforce Server-Side Role Permissions"
+    },
+    {
+      "id": "REQ-087",
+      "label": "Protect Cross-Club Data Boundaries"
+    },
+    {
+      "id": "REQ-088",
+      "label": "Test Player Administrative Restrictions"
+    },
+    {
+      "id": "REQ-089",
+      "label": "Scale Role-Scoped Platform Data"
+    },
+    {
+      "id": "REQ-090",
+      "label": "Record Required Creation Metadata"
+    }
+  ],
+  "journeys": [
+    {
+      "id": "auth-email",
+      "name": "Email/password player auth",
+      "status": "ok",
+      "notes": "Web sign-in and API registration",
+      "requirementIds": [
+        "REQ-001",
+        "REQ-018",
+        "REQ-028",
+        "REQ-029",
+        "REQ-031",
+        "REQ-048",
+        "REQ-062",
+        "REQ-082"
+      ]
+    },
+    {
+      "id": "auth-google",
+      "name": "Google linking",
+      "status": "ok",
+      "notes": "POST /api/auth/google",
+      "requirementIds": [
+        "REQ-019",
+        "REQ-030"
+      ]
+    },
+    {
+      "id": "mobile-membership",
+      "name": "Mobile invitations and join requests",
+      "status": "ok",
+      "notes": "mobile/src/api membership flows",
+      "requirementIds": [
+        "REQ-002",
+        "REQ-003",
+        "REQ-004",
+        "REQ-049",
+        "REQ-056",
+        "REQ-063",
+        "REQ-083",
+        "REQ-038",
+        "REQ-055",
+        "REQ-073"
+      ]
+    },
+    {
+      "id": "mobile-discovery",
+      "name": "Mobile live clubs and activity",
+      "status": "ok",
+      "notes": "Live-clubs and activity clients",
+      "requirementIds": [
+        "REQ-005",
+        "REQ-006",
+        "REQ-050",
+        "REQ-051",
+        "REQ-060",
+        "REQ-064",
+        "REQ-084",
+        "REQ-085",
+        "REQ-044",
+        "REQ-045",
+        "REQ-046",
+        "REQ-080"
+      ]
+    },
+    {
+      "id": "rbac-audit",
+      "name": "Server RBAC and audit",
+      "status": "ok",
+      "notes": "Automated permission tests",
+      "requirementIds": [
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011",
+        "REQ-033",
+        "REQ-034",
+        "REQ-035",
+        "REQ-036",
+        "REQ-052",
+        "REQ-053",
+        "REQ-054",
+        "REQ-065",
+        "REQ-066",
+        "REQ-067",
+        "REQ-068",
+        "REQ-069",
+        "REQ-070",
+        "REQ-071",
+        "REQ-086",
+        "REQ-087",
+        "REQ-088",
+        "REQ-089",
+        "REQ-090"
+      ]
+    },
+    {
+      "id": "club-ops",
+      "name": "Club admin membership and tournaments",
+      "status": "ok",
+      "notes": "Admin routes and web views",
+      "requirementIds": [
+        "REQ-037",
+        "REQ-039",
+        "REQ-040",
+        "REQ-043",
+        "REQ-057",
+        "REQ-059",
+        "REQ-072",
+        "REQ-074",
+        "REQ-075",
+        "REQ-076",
+        "REQ-077",
+        "REQ-078",
+        "REQ-079"
+      ]
+    },
+    {
+      "id": "policies",
+      "name": "Documented policies",
+      "status": "ok",
+      "notes": "docs/*.md policy placeholders",
+      "requirementIds": [
+        "REQ-032",
+        "REQ-041",
+        "REQ-042",
+        "REQ-058"
+      ]
+    },
+    {
+      "id": "mobile-platform",
+      "name": "Mobile platform baseline",
+      "status": "ok",
+      "notes": "docs/MOBILE_PLATFORM_BASELINE.md",
+      "requirementIds": [
+        "REQ-047",
+        "REQ-061",
+        "REQ-081"
+      ]
+    },
+    {
+      "id": "web-preview",
+      "name": "Web preview shell and golf UX",
+      "status": "ok",
+      "notes": "Vite root UI",
+      "requirementIds": [
+        "REQ-012",
+        "REQ-013",
+        "REQ-014",
+        "REQ-015",
+        "REQ-016",
+        "REQ-017",
+        "REQ-020",
+        "REQ-021",
+        "REQ-022",
+        "REQ-023",
+        "REQ-024",
+        "REQ-025",
+        "REQ-026",
+        "REQ-027"
+      ]
+    }
+  ],
+  "workItems": [],
+  "figma": [],
+  "sources": [
+    "backend/backend",
+    "src",
+    "mobile"
+  ],
+  "uiChange": true,
+  "fingerprint": "c3694bee8bb48c1922f19bcdd660c2919aeeba632618a2e6a8ae992ef1217e92"
+}

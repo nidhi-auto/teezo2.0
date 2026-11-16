@@ -1,0 +1,81 @@
+{
+  "alteredTables": [],
+  "newTables": [
+    {
+      "name": "accounts",
+      "justification": "Core identity for super admin, club admin, and player roles",
+      "fks": []
+    },
+    {
+      "name": "password_credentials",
+      "justification": "Scrypt password hashes isolated from account records",
+      "fks": [{ "column": "account_id", "references": "accounts.id" }]
+    },
+    {
+      "name": "google_identities",
+      "justification": "Google SSO linkage per account",
+      "fks": [{ "column": "account_id", "references": "accounts.id" }]
+    },
+    {
+      "name": "sessions",
+      "justification": "Expiring revocable bearer sessions",
+      "fks": [{ "column": "account_id", "references": "accounts.id" }]
+    },
+    {
+      "name": "password_reset_tokens",
+      "justification": "Password reset flow tokens (REQ-031)",
+      "fks": [{ "column": "account_id", "references": "accounts.id" }]
+    },
+    {
+      "name": "clubs",
+      "justification": "Golf clubs on the platform",
+      "fks": []
+    },
+    {
+      "name": "club_admin_assignments",
+      "justification": "Many-to-many club admin to club",
+      "fks": [
+        { "column": "account_id", "references": "accounts.id" },
+        { "column": "club_id", "references": "clubs.id" }
+      ]
+    },
+    {
+      "name": "memberships",
+      "justification": "Player membership in clubs",
+      "fks": [
+        { "column": "account_id", "references": "accounts.id" },
+        { "column": "club_id", "references": "clubs.id" }
+      ]
+    },
+    {
+      "name": "invitations",
+      "justification": "Club invitations to players",
+      "fks": [{ "column": "club_id", "references": "clubs.id" }]
+    },
+    {
+      "name": "join_requests",
+      "justification": "Player-initiated join requests",
+      "fks": [
+        { "column": "account_id", "references": "accounts.id" },
+        { "column": "club_id", "references": "clubs.id" }
+      ]
+    },
+    {
+      "name": "tournaments",
+      "justification": "Club-scoped tournaments with lifecycle",
+      "fks": [{ "column": "club_id", "references": "clubs.id" }]
+    },
+    {
+      "name": "creation_audit_events",
+      "justification": "Immutable creation metadata for compliance",
+      "fks": [{ "column": "creator_account_id", "references": "accounts.id" }]
+    }
+  ],
+  "reusedEntities": [],
+  "newFolders": [
+    {
+      "path": "src/store",
+      "justification": "In-memory persistence with optional future PG repositories"
+    }
+  ]
+}
